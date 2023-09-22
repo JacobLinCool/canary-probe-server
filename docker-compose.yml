@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+    app:
+        image: "jacoblincool/canary-probe-server:latest"
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "48080:48080"
+        environment:
+            - PORT=48080
+            - ORIGIN=http://localhost:48080
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ./tmp:/app/tmp
