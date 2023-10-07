@@ -16,7 +16,7 @@
 		"format": "prettier --ignore-path .gitignore --write **/*.{ts,js,json,yaml,yml,svelte,html,css}"
 	},
 	"dependencies": {
-		"canary-probe": "^0.0.1"
+		"canary-probe": "^0.2.0"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.38.1",
